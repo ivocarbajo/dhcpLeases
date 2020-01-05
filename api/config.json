@@ -1,0 +1,5 @@
+{
+    "port": 8080,
+    "dhcpLeasesFile": "C:\\test\\dhcpd.leases",
+    "developmentMode": true
+}

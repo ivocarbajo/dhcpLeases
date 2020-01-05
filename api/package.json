@@ -1,0 +1,20 @@
+{
+  "name": "dhcpleases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js",
+    "stop": "forever stop index.js",
+    "start": "forever start index.js"
+  },
+  "author": "Cody",
+  "license": "ISC",
+  "dependencies": {
+    "assert-plus": "^1.0.0",
+    "daemon": "^1.1.0",
+    "forever": "^1.0.0",
+    "http": "0.0.0"
+  }
+}

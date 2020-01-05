@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Welcome</h1>
+    <h5>The currently assigned / assignable IP addresses are:</h5>
+    <table class="highlight">
+        <thead>
+          <tr>
+            <td>IP address</td>
+            <td>MAC address</td>
+            <td>Client host name</td>
+            <td>Binding state</td>
+          </tr>
+        </thead>
+        <tbody *ngFor="let lease of ipLeases">
+          <tr>
+            <td>{{lease.ip}}</td>
+            <td>{{lease.macAddress}}</td>
+            <td>{{lease.clientHostname}}</td>
+            <td *ngIf="lease.binded" style="color: green;">
+              <i class="small material-icons">
+                check_circle
+              </i>
+            </td>
+            <td *ngIf="!lease.binded">
+              <i class="small material-icons" style="color: red;">
+                remove_circle
+              </i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
